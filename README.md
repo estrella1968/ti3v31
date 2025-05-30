@@ -1,2 +1,2 @@
-# ti3v31
+curso de programación Front-End
 repositorio del curso de programación Front-End
