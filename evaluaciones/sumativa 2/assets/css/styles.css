@@ -1,0 +1,186 @@
+:root {
+  --rojo: #D72638;
+  --azul: #1B1F3B;
+  --amarillo: #F0C808;
+  --gris-claro: #F5F5F5;
+  --gris-oscuro: #2E2E2E;
+
+  --fuente-titulo: 'Montserrat', sans-serif;
+  --fuente-texto: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background-color: var(--gris-claro);
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-family: var(--fuente-titulo);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Imagen representativa */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sección de talleres */
+.talleres {
+  padding: 2rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.talleres h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 2rem;
+  color: var(--azul);
+  margin-bottom: 2rem;
+}
+
+/* Tarjetas */
+.card {
+  background-color: var(--gris-claro);
+  border-left: 6px solid var(--amarillo);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-family: var(--fuente-titulo);
+  color: var(--rojo);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+}
+
+.card span {
+  font-weight: bold;
+  color: var(--azul);
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--gris-oscuro);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Diseño responsivo */
+@media (min-width: 768px) {
+  .talleres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 60%;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f0fe;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#formulario {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#formulario label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#formulario input,
+#formulario select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#formulario button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#formulario button:hover {
+  background-color: #0052a3;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raices Digitales</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Raices Digitales</h1>
+    <p>Expresa, crea y transforma tu comunidad a traves del arte</p>
+  </header>
+
+  <section class="hero">
+    <img src="assets/arte-urbano.jpg" alt="Expresion artistica urbana">
+  </section>
+
+  <section class="talleres">
+    <h2>Sumate a nuestros talleres abiertos</h2>
+
+    <article class="card">
+      <h3>Teatro Comunitario</h3>
+      <p>Vive el arte de actuar como una herramienta de transformacion social. En este taller descubriras como contar historias que nacen del barrio y reflejan nuestras realidades.</p>
+      <span><strong>Horario:</strong> lunes y miercoles  18:00 a 20:00</span>
+    </article>
+
+    <article class="card">
+      <h3>Danza Urbana</h3>
+      <p>Siente el ritmo, libera el cuerpo. Este espacio es ideal para aprender coreografias urbanas y expresar emociones a traves del movimiento colectivo. ¡No necesitas experiencia previa!</p>
+      <span><strong>Horario:</strong> martes y jueves 17:00 a 19:00</span>
+    </article>
+
+    <article class="card">
+      <h3>Musica Urbana</h3>
+      <p>Experimenta con sonidos que nacen de la calle. Beatmaking, letras con contenido social y creacion colectiva te esperan para que tu voz tambien sea parte de esta cultura.</p>
+      <span><strong>Horario:</strong> Sabados  15:00 a 18:00</span>
+    </article>
+  </section>
+  
+  <section id="formulario">
+    <h2>Inscripción a Talleres</h2>
+    <form action="#" method="post">
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" name="nombres" required>
+  
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required>
+  
+      <label for="rut">RUT (nnnnnnnn-n):</label>
+      <input type="text" id="rut" name="rut" pattern="^\d{7,8}-[0-9kK]{1}$" required
+             title="Formato válido: 12345678-9">
+  
+      <label for="fecha">Fecha de Nacimiento (dd/mm/aaaa):</label>
+      <input type="text" id="fecha" name="fecha" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}$" required
+             title="Formato válido: dd/mm/aaaa">
+  
+      <label for="taller">Taller de Interés:</label>
+      <select id="taller" name="taller" required>
+        <option value="">Seleccione un taller</option>
+        <option value="teatro">Teatro</option>
+        <option value="danza">Danza</option>
+        <option value="musica">Música Urbana</option>
+      </select>
+  
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required
+             title="Ejemplo: usuario@dominio.cl">
+  
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>Derechos reservados</p>
+  </footer>
+</body>
+</html>
